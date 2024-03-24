@@ -6,6 +6,12 @@ I modified this addins by providing another choice for 'assign', i.e.:
 
 (without a new line after the 'assign' which is better aligns with my personal taste.)
 
+#### Installation:
+
+Enter the following code in the Console:
+
+`devtools::install_github("YongZHU02/mufflr-personalized")`
+
 ------------------------------------------------------------------------
 
 # mufflr: Making your pipes quieter.
