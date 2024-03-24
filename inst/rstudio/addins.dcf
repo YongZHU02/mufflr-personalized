@@ -1,3 +1,8 @@
+Name: Insert <-
+Description: Inserts <- and a space at the cursor position.
+Binding: assignIndent
+Interactive: false
+
 Name: Insert <-\n
 Description: Inserts <- and a newline at the cursor position.
 Binding: assignNewlineIndent
