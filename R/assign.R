@@ -1,9 +1,9 @@
-#' assignIndent
-#' @description Call this function as an addin to insert an assignment (<-) and a space at the cursor position with an extra indent level.
+#' assign
+#' @description Call this function as an addin to insert an assignment (<-) and a space at the cursor position.
 #' @return NULL
 #' @export
 #'
-assignIndent <- function(){
+assign <- function(){
   SPACE_PREF <- .rs.readUiPref('num_spaces_for_tab')
 
   context <- rstudioapi::getActiveDocumentContext()
@@ -13,15 +13,15 @@ assignIndent <- function(){
   if(sum(context$selection[[1]]$range$end -
          context$selection[[1]]$range$start) > 0){
     #Non-empy selection. Just insert the assign.
-    rstudioapi::insertText(paste0("<- ", strrep(" ",indent_context+SPACE_PREF)))
+    rstudioapi::insertText("<- ")
   }else{
     if(grepl(pattern = '\\s$', context$contents[context_row])){
       #Empty selection. If the last char of the line is a space do not insert one.
-      rstudioapi::insertText(paste0("<- ", strrep(" ",indent_context+SPACE_PREF)))
+      rstudioapi::insertText("<- ")
     }
     else{
       #Insert a space
-      rstudioapi::insertText(paste0(" <- ", strrep(" ",indent_context+SPACE_PREF)))
+      rstudioapi::insertText(" <- ")
     }
   }
 }

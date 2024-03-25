@@ -1,6 +1,6 @@
 Name: Insert <-
 Description: Inserts <- and a space at the cursor position.
-Binding: assignIndent
+Binding: assign
 Interactive: false
 
 Name: Insert <-\n

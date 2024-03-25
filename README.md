@@ -1,8 +1,8 @@
 ### Thanks for the great work by Miles McBain first!
 
-I modified this addins by providing another choice for 'assign', i.e.:
+I modified this addins by providing another choice for simply 'assign', i.e.:
 
--   `<space if needed> <- <space><indent>`
+-   `<space if needed> <- <space>`
 
 (without a new line after the 'assign' which is better aligns with my personal taste.)
 
